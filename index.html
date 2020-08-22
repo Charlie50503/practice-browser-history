@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>回到上一頁</title>
+	</head>
+	<body>
+		<h1>第一頁</h1>
+		<a href="b.html">連到第二頁</a>
+		<a href="#" id="next">下一頁JS版</a>
+		<a href="#" id="next2">下一頁JS版2</a>
+		
+		<script>
+			document.getElementById('next').onclick = function() {
+				//在会话历史中向前移动一页。
+				window.history.forward()
+			}
+			document.getElementById('next2').onclick = function() {
+				//在会话历史中向前移动一页。
+				window.history.go(1)
+			}
+		</script>
+		<input type="button" id="back" value="回到上一頁">
+	
+	</body>
+</html>

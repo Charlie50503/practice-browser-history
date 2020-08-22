@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>回到上一頁</title>
+	</head>
+	<body>
+		<h1>第二頁</h1>
+		<input type="button" name="button" id="back" value="回到上一頁" />
+		<input type="button" name="button" id="back2" value="回到上一頁2" />
+		
+		<script>
+			document.getElementById('back').onclick = function() {
+				window.history.back();
+			}
+			document.getElementById('back2').onclick = function() {
+				//在会话历史中向前移动一页。
+				window.history.go(-1)
+			}
+		</script>
+	
+	</body>
+</html>
